@@ -13,7 +13,7 @@ public class Exe0703_CountNumbers {
     
     private static final int N = 50;
 
-    // Function main begins program execution.
+    // Method main begins program execution.
     public static void main(String[] args) {
         System.out.println("*** Exercise 7.3 - Count occurrence of numbers ***\n");
 

@@ -13,7 +13,7 @@ public class Exe0702_ReverseNumbers {
     
     private static final int N = 10;
 
-    // Function main begins program execution.
+    // Method main begins program execution.
     public static void main(String[] args) {
         System.out.println("*** Exercise 7.2 - Reverse the numbers entered ***\n");
 
