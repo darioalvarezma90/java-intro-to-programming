@@ -11,4 +11,17 @@ public class Arrays {
         }
         return max;
     }
+
+    public static double average(int[] iarray, int start, int end) {
+        var total = sum(iarray, start, end);
+        return total / (end - start);
+    }
+
+    public static double sum(int[] iarray, int start, int end) {
+        var total = 0.0;
+        for (var i = start; i < end; i++) {
+            total += iarray[i];
+        }
+        return total;
+    }
 }
