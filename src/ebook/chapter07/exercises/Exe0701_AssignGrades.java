@@ -43,7 +43,7 @@ public class Exe0701_AssignGrades {
         }
 
         // Gets the best score and assigns corresponding grades.
-        int bestScore = Arrays.maximum(scores);
+        int bestScore = Arrays.getMaximum(scores);
         char[] grades = new char[n];
         for (int i = 0; i < n; i++) {
             grades[i] = assignGrade(scores[i], bestScore);

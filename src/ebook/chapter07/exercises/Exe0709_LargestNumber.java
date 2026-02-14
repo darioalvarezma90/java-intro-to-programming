@@ -36,7 +36,7 @@ public class Exe0709_LargestNumber {
         }
 
         // Find largest element in array and displays results.
-        double largest = Arrays.maximum(darray);
+        double largest = Arrays.getMaximum(darray);
         System.out.printf("The maximum number is: %.2f\n", largest);
     }
 }
