@@ -29,28 +29,28 @@ public class Exe0701_AssignGrades {
 
         // Creates Scanner object.
         @SuppressWarnings("resource")
-        var keyboard = new Scanner(System.in);
+        Scanner keyboard = new Scanner(System.in);
 
         // Enters number of students.
         System.out.print("Enter the number of students: ");
-        var n = keyboard.nextInt();
+        int n = keyboard.nextInt();
 
         // Enters student scores.
-        var scores = new int[n];
+        int[] scores = new int[n];
         System.out.printf("Enter %d scores: ", n);
-        for (var i = 0; i < n; i++) {
+        for (int i = 0; i < n; i++) {
             scores[i] = keyboard.nextInt();
         }
 
         // Gets the best score and assigns corresponding grades.
-        var bestScore = Arrays.maximum(scores);
-        var grades = new char[n];
-        for (var i = 0; i < n; i++) {
+        int bestScore = Arrays.maximum(scores);
+        char[] grades = new char[n];
+        for (int i = 0; i < n; i++) {
             grades[i] = assignGrade(scores[i], bestScore);
         }
 
         // Displays results.
-        for (var i = 0; i < n; i++) {
+        for (int i = 0; i < n; i++) {
             System.out.printf("Student %d score is %d and grade is %c\n", i, scores[i], grades[i]);
         }
     }

@@ -17,13 +17,13 @@ public class Exe0707_CountDigits {
         System.out.println("*** Exercise 7.7 - Count single digits ***\n");
 
         // Generates 200 random integers and increments appropriate counter.
-        var counters = new int[DIGITS];
-        for (var i = 0; i < TRIALS; i++) {
+        int[] counters = new int[DIGITS];
+        for (int i = 0; i < TRIALS; i++) {
             counters[(int)(DIGITS * Math.random())]++;
         }
 
         // Display results.
-        for (var i = 0; i < DIGITS; i++) {
+        for (int i = 0; i < DIGITS; i++) {
             System.out.printf("Digit %d occurs %d times\n", i, counters[i]);
         }
     }

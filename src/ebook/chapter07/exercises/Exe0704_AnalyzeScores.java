@@ -23,15 +23,15 @@ public class Exe0704_AnalyzeScores {
 
         // Creates Scanner object.
         @SuppressWarnings("resource")
-        var keyboard = new Scanner(System.in);
+        Scanner keyboard = new Scanner(System.in);
 
         // Creates scores array and init entered numbers counter.
-        var scores = new int[N];
-        var entered = 0;
+        int[] scores = new int[N];
+        int entered = 0;
 
         // Enter valid scores and increments numbers coounter.
         System.out.print("Enter scores (-1 to exit): ");
-        var n = keyboard.nextInt();
+        int n = keyboard.nextInt();
         while (n >= 0 && entered < N) {
             scores[entered] = n;
             entered++;
@@ -39,11 +39,11 @@ public class Exe0704_AnalyzeScores {
         }
 
         // Compute average of entered numbers.
-        var avg = Arrays.average(scores, 0, entered);
+        double avg = Arrays.average(scores, 0, entered);
 
         // Counts above or equal and below to average entered values.
-        var aboveOrEqual = 0;
-        var below = 0;
+        int aboveOrEqual = 0;
+        int below = 0;
         for (int i = 0; i < entered; i++) {
             if (scores[i] >= avg) {
                 aboveOrEqual++;

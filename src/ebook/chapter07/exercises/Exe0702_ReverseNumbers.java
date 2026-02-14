@@ -19,18 +19,18 @@ public class Exe0702_ReverseNumbers {
 
         // Creates Scanner object.
         @SuppressWarnings("resource")
-        var keyboard = new Scanner(System.in);
+        Scanner keyboard = new Scanner(System.in);
 
         // Enter integers.
-        var integers = new int[N];
+        int[] integers = new int[N];
         System.out.printf("Enter %d integers: ", N);
-        for (var i = 0; i < N; i++) {
+        for (int i = 0; i < N; i++) {
             integers[i] = keyboard.nextInt();
         }
 
         // Display numbers in reverse order.
         System.out.print("Reversed numbers: ");
-        for (var i = N - 1; i >= 0; i--) {
+        for (int i = N - 1; i >= 0; i--) {
             System.out.printf("%d ", integers[i]);
         }
         System.out.println();

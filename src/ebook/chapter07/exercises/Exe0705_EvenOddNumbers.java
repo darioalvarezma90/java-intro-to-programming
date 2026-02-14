@@ -20,14 +20,14 @@ public class Exe0705_EvenOddNumbers {
 
         // Creates Scanner object.
         @SuppressWarnings("resource")
-        var keyboard = new Scanner(System.in);
+        Scanner keyboard = new Scanner(System.in);
 
         // Creates counters array.
-        var counters = new int[N];
+        int[] counters = new int[N];
 
         // Enter valid numbers and increments corresponding counter.
         System.out.print("Enter numbers: ");
-        var n = keyboard.nextInt();
+        int n = keyboard.nextInt();
         while (n != 0) {
             counters[n % 2]++;
             n = keyboard.nextInt();

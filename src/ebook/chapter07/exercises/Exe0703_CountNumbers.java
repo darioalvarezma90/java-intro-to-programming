@@ -19,13 +19,13 @@ public class Exe0703_CountNumbers {
 
         // Creates Scanner object.
         @SuppressWarnings("resource")
-        var keyboard = new Scanner(System.in);
+        Scanner keyboard = new Scanner(System.in);
 
         // Creates counters array.
-        var counters = new int[N + 1];
+        int[] counters = new int[N + 1];
 
         // Enter integers and increments corresponding counter.
-        var n = -1;
+        int n = -1;
         System.out.print("Enter the integers between 1 and 50: ");
         while (n != 0) {
             n = keyboard.nextInt();
@@ -35,9 +35,9 @@ public class Exe0703_CountNumbers {
         }
 
         // Display results.
-        for (var i = 1; i <= N; i++) {
+        for (int i = 1; i <= N; i++) {
             if (counters[i] > 0) {
-                var message = "time";
+                String message = "time";
                 if (counters[i] > 1) {
                     message = "times";
                 }
