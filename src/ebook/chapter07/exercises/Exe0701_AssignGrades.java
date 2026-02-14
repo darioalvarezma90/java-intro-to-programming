@@ -23,6 +23,7 @@ import ebook.util.Arrays;
  */
 public class Exe0701_AssignGrades {
 
+    // Function main begins program execution.
     public static void main(String[] args) {
         System.out.println("*** Exercise 7.1 - Assign Grades ***\n");
 
@@ -54,6 +55,7 @@ public class Exe0701_AssignGrades {
         }
     }
 
+    // Helper method.
     private static char assignGrade(int x, int bestScore) {
         if (x >= bestScore - 05) { return 'A'; }
         if (x >= bestScore - 10) { return 'B'; }
